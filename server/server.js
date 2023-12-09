@@ -17,7 +17,7 @@ app.use(express.static('public'))
 
 const port = process.env.PORT || 3000;
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:3001'], //included origin as true
+  origin: '*', //included origin as true
   credentials: true, //included credentials as true
 };
 
